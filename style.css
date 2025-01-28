@@ -1,0 +1,290 @@
+body{
+    font-family: "Poppins", serif;
+    background-color: #121212;
+}
+
+/* navbar */
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.navbar-item {
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+    border: none;
+    margin-left: 10px;
+}
+
+.navbar{
+    padding: 20px;
+   background-color: #121212;
+}
+
+/* CAROUSEL */
+
+.custom-carousel {
+    position: relative;
+    padding: 0;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .custom-carousel .carousel-inner img {
+    border-radius: 10px;
+  }
+
+.carousel-control-prev{
+    margin: 20px;
+}
+
+.carousel-control-next{
+    margin: 20px;
+}
+  .custom-carousel .carousel-indicators {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    z-index: 10; 
+    margin: auto;
+  }
+  
+  
+  .custom-carousel .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .custom-carousel .carousel-indicators .active {
+    background-color: #00D860;
+  }
+
+
+  /* lagu */
+  .custom-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom, #1f1f1f, #00d8611e);
+
+}
+.custom-card img {
+    border-radius: 50%;
+    width: auto;
+    height: 150px;
+    transition: transform 1s;
+    will-change: transform;
+}
+.custom-card .text-right {
+    text-align: right;
+    color: white;
+}
+.play-btn {
+    cursor: pointer;
+}
+.rotate {
+    animation: spin 4s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* artist */
+.artist-img {
+    width: 150px; 
+    height: 150px;
+    object-fit: cover; 
+  }
+  .artist-item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  .artist-name {
+    font-weight: bold;
+    text-align: left;
+    font-weight: 500;
+  }
+
+  /* Remind */
+  .round-img {
+    width: 140px; 
+    height: 140px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    padding: 5px;
+  }
+  .image-container {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 20px;
+  }
+  .image-item {
+    text-align: center; 
+   
+    flex: 1 1 calc(33.33% - 20px);
+  }
+  .image-name {
+    font-weight: bold;
+    margin-top: 15px; 
+    color: white;
+    font-weight: 500;
+    font-size: 18px
+  }
+
+  /* PLAYLIST */
+  .card-ply {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 30px;
+    background-color: #1f1f1f;
+    color: white;
+  }
+  .card-ply img {
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+  .card-header-ply {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+  }
+  .profile-section {
+    display: flex;
+    align-items: center;
+  }
+  .profile-section img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  .profile-section .profile-info h5 {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  .profile-section .profile-info p {
+    margin: 0;
+    font-size: 0.7rem;
+    color: #bbb;
+  }
+  .icon-section {
+    font-size: 1.5rem;
+    color: #00D860;
+  }
+  .card-body-ply {
+    position: relative;
+    padding: 20px;
+  }
+  .card-body-ply .buttons-ply {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  .card-body-ply .buttons-ply i {
+    font-size: 1.5rem;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #00D860;
+  }
+  .card-body-ply p {
+    margin-bottom: 50px;
+  }
+
+  /* RC */
+  .profile-box {
+    max-height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #f9f9f9;
+  }
+  .profile-imgg {
+    width: 50px;
+    height: 50px;
+
+  }
+  .profile-name {
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  .profile-paragraph {
+    margin-top: 10px;
+  }
+  .icon-hover {
+    transition: transform 0.3s, color 0.3s;
+  }
+
+  .icon-hover:hover {
+    color: white;
+    transform: scale(1.2);
+  }
+
+
+  .modal-content {
+    background-color: #1f1f1f;
+    border: none !important;
+    border-radius: 10px;
+  }
+  .modal-footer {
+    font-weight: 500 !important;
+  }
+  
+  .modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .modal-header, .modal-footer {
+    text-align: center;
+    border: none;
+  }
+  
+  .modal-header h5 {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+  }
+  
+  #answerInput {
+    border: none !important;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: white;
+    width: 100%;
+    margin-top: 15px;
+  }
+  
+  #answerInput:focus {
+    outline: none;
+    border-bottom: 2px solid #AEC4EE;
+  }
+  
+  .modal-footer .btn {
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+  }
+  
